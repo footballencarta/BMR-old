@@ -77,11 +77,11 @@ you may use `$BMR->CalculateBMR()` to perform the calculation, which will return
 if this returns `false` you may locate the error mesage with `echo $BMR->ErrorMsg`
 
 
-# Errors
+# Error Messages
 
-every function except GetBMR() will return an error if false
+every function except GetBMR() will store an error message if false
 
-## displaying errors examples
+## error message examples
 ```
 if (!$BMR->SetHeight('some incorrect value')){
   echo $BMR->ErrorMsg; // returns: Invalid height - out of range
