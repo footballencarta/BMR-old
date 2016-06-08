@@ -219,24 +219,3 @@ class BMR
     }
 
 }
-
-/**
-
-Example Usage:
-
-$options = [
-	'height'=>'5,7',
-	'weight_lbs'=>200,
-	'age'=>28,
-	'gender'=>'m'
-];
-
-$BMR = new BMR($options);
-
-if ($BMR->CalculateBMR()) {
-	echo $BMR->GetBMR();
-}
-else {
-	echo $BMR->ErrorMsg;
-}
- */
